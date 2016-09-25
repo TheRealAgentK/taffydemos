@@ -2,6 +2,9 @@ component extends="taffy.core.api"
 {
     this.name = "TaffyDemo";
 
+    variables.framework = {};
+    variables.framework.serializer = "resources.CustomSerializer";
+
     function onApplicationStart() {
 
         application.productList = [
@@ -15,6 +18,9 @@ component extends="taffy.core.api"
             "abcdef",
             "zyxwvu"
         ];
+
+        application.anythingToXML = new anythingtoxml.AnythingToXML();
+        application.jsonUtil = new jsonutil();
 
         return super.onApplicationStart();
 
