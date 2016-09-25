@@ -1,6 +1,6 @@
 component extends="taffy.core.resource" taffy_uri="/product/{productId}"
 {
-    public function get(required numeric productId){
+    public function get(required numeric productId) {
 
         for (var product in application.productList) {
             if (product["id"] == arguments.productId) {
@@ -12,7 +12,7 @@ component extends="taffy.core.resource" taffy_uri="/product/{productId}"
 
     }
 
-    public function put(required numeric productId, required string name){
+    public function put(required numeric productId, required string name) {
 
         for (var product in application.productList) {
             if (product["id"] == arguments.productId) {
