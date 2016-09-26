@@ -32,7 +32,7 @@ component extends="taffy.core.api"
 
     }
 
-    function onTaffyRequest(verb, cfc, requestArguments, mimeExt) {
+    function onTaffyRequest(verb, cfc, requestArguments, mimeExt, headers) {
 
         if (not structKeyExists(arguments.requestArguments, "apiKey") || !Len(arguments.requestArguments["apiKey"])) {
             return noData().withStatus(401, "Unauthorized");
