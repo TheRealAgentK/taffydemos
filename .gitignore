@@ -1,3 +1,5 @@
 .gitignore
 .idea/
 TaffyDemos.iml
+documentation/TaffyDemo.paw
+documentation/documentation.html
